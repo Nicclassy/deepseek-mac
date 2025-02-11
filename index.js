@@ -15,7 +15,7 @@ const {
 const contextMenu = require("electron-context-menu");
 
 const image = nativeImage.createFromPath(
-  path.join(__dirname, `images/newiconTemplate.png`)
+  path.join(__dirname, `images/menubarIcon.png`)
 );
 
 app.on("ready", () => {
@@ -52,7 +52,6 @@ app.on("ready", () => {
     }
 
     const contextMenuTemplate = [
-      // add links to github repo and vince's twitter
       {
         label: "Quit",
         accelerator: "Command+Q",
@@ -70,7 +69,7 @@ app.on("ready", () => {
       {
         label: "Open in browser",
         click: () => {
-          shell.openExternal("https://chat.openai.com/chat");
+          shell.openExternal("https://chat.deepseek.com");
         },
       },
       {
@@ -79,15 +78,9 @@ app.on("ready", () => {
       {
         label: "View on GitHub",
         click: () => {
-          shell.openExternal("https://github.com/vincelwt/chatgpt-mac");
+          shell.openExternal("https://github.com/Nicclassy/deepseek-mac");
         },
-      },
-      {
-        label: "Author on Twitter",
-        click: () => {
-          shell.openExternal("https://twitter.com/vincelwt");
-        },
-      },
+      }
     ];
 
     tray.on("right-click", () => {
