@@ -1,7 +1,7 @@
 {
-  "name": "chatgpt-mac",
-  "productName": "chatgpt-mac",
-  "version": "0.0.5",
+  "name": "deepseek-mac",
+  "productName": "deepseek-mac",
+  "version": "0.0.1",
   "description": "Menubar app for ChatGPT",
   "main": "index.js",
   "scripts": {
@@ -12,24 +12,20 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [
-    "chatgpt",
-    "openai",
+    "deepseek",
     "mac"
   ],
-  "author": {
-    "name": "Vince Loewe",
-    "email": "vince@lyser.io"
-  },
   "license": "MIT",
   "dependencies": {
     "electron-context-menu": "^3.6.0",
+    "electron-forge": "^5.2.4",
     "menubar": "^9.2.3",
     "nucleus-analytics": "^4.0.3",
     "update-electron-app": "^2.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vincelwt/chatgpt-mac"
+    "url": "https://github.com/Nicclassy/deepseek-mac"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",
